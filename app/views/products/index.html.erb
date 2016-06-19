@@ -1,13 +1,23 @@
 <h1>Products Inventory</h1>
+<ul>
 <% @products.each do |x| %>
-  <ul>
+
     <li>
+      <p>
       Name:
-        <%= x.name %><br />
+        <%= x.name %>
+      </p>
+
+      <p>
       Description
-        <%= x.description %><br />
+        <%= x.description %>
+      </p>
+
+      <p>
       Price
         <%= x.price_in_cents %>
+      </p>
     </li>
-  </ul>
+
 <% end %>
+</ul>
