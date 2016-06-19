@@ -1,0 +1,13 @@
+<h1>Products Inventory</h1>
+<% @products.each do |x| %>
+  <ul>
+    <li>
+      Name:
+        <%= x.name %><br />
+      Description
+        <%= x.description %><br />
+      Price
+        <%= x.price_in_cents %>
+    </li>
+  </ul>
+<% end %>
